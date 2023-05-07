@@ -1,0 +1,38 @@
+Tarefas: Serão somente anotações.
+Lembretes: Também funciona como uma tarefa, mas com uma data.
+
+Comandos
+npm init
+npm install typescript --dev
+
+Configuração package json
+{
+  "name": "teste",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.0.4"
+  }
+}
+
+tsconfig.json
+{
+    "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs",
+      "outDir": "./public/dist",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true
+    }
+  }
+
+
+npm run build
